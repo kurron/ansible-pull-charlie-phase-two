@@ -13,7 +13,6 @@
   tasks:
       - hostname: name=bravo
       - pip: name=httpie
-      - apt: name=mysql-client-5.6 state=present update_cache=true cache_valid_time=3600 install_recommends=true
 
 - name: Start Docker Containers
   hosts: Ubuntu
@@ -43,7 +42,7 @@
             command: "--storageEngine=wiredTiger --wiredTigerCacheSizeGB=1 --directoryperdb"
             detach: True
             hostname: "mongodb"
-            image: "mongodb:latest"
+            image: "mongo:latest"
             log_driver: "json-file"
             log_options:
                 max-size: "50m"
