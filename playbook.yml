@@ -130,7 +130,7 @@
             etc_hosts:
                 mongodb: "{{ charlie_ip }}"
                 rabbitmq: "{{ charlie_ip }}"
-                molde: "{{ charlie_ip }}"
+                mold-e: "{{ charlie_ip }}"
             hostname: "batch-replay"
             image: "registry.transparent.com/mold-e-replay:{{ replay_image_tag }}"
             log_driver: "json-file"
