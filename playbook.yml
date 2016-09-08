@@ -137,8 +137,8 @@
             name: "batch-replay"
             network_mode: "bridge"
             published_ports:
-            - "{{ report_event_processor_http_port }}:8080"
-            - "{{ report_event_processor_jmx_port }}:2020"
+            - "{{ replay_http_port }}:8080"
+            - "{{ replay_jmx_port }}:2020"
             pull: False
             restart_policy: "always"
             state: "started"
