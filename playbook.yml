@@ -126,9 +126,11 @@
                 spring_rabbitmq_password: "{{ rabbitmq_password }}"
                 spring_data_mongodb_host: "mongodb"
                 spring_data_mongodb_database: "{{ replay_database }}"
+                replay_processor_port={{ report_event_processor_http_port }}"
             etc_hosts:
                 mongodb: "{{ charlie_ip }}"
                 rabbitmq: "{{ charlie_ip }}"
+                molde: "{{ charlie_ip }}"
             hostname: "batch-replay"
             image: "registry.transparent.com/mold-e-replay:{{ replay_image_tag }}"
             log_driver: "json-file"
