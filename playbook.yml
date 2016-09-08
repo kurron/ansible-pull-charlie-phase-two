@@ -65,7 +65,7 @@
             log_options:
                 max-size: "50m"
             # limit RabbitMQ to 1GB of RAM or it will steal 40% of available memory
-            memory: "1g"
+            memory: "1GB"
             name: "rabbitmq"
             network_mode: "host"
             restart_policy: "always"
