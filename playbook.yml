@@ -27,11 +27,11 @@
        reporting_exchange: "exchange-events"
        reporting_database: "reporting"
 
-       report_event_processor_image_tag: "1.0.768.MILESTONE"
+       report_event_processor_image_tag: "1.0.780.MILESTONE"
        report_event_processor_http_port: "3080"
        report_event_processor_jmx_port: "3020"
 
-       replay_image_tag: "1.1.49.MILESTONE"
+       replay_image_tag: "1.1.50.MILESTONE"
        replay_http_port: "4080"
        replay_jmx_port: "4020"
        replay_database: "journal"
